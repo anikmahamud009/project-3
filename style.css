@@ -1,3 +1,11 @@
+/*---------html all elements can define this tag---*/
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box ;
+}
+
 /*-----column define------*/
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
@@ -15,8 +23,15 @@
 
 [class*='col-']{
     float:left;
-    border: 1px solid gray;
+    border: 1px solid darkolivegreen;
     box-sizing: border-box;
+
+}
+.wrapper{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: beige;
 
 }
 
@@ -42,4 +57,70 @@
 .footer-height{
     height: 40px;
 
+}
+
+/*---nav bar start----*/
+.main-ul{
+    list-style-type: none;
+}
+.main-li{
+    float: left;
+    width: 120px;
+
+}
+.main-li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 1px solid gray;
+    height: 50px;
+    padding-top: 15px;
+    background-color: antiquewhite;
+    color:black;
+    transition: all s;
+}
+.main-li a:hover{
+    background-color:gray;
+    color: green;
+}
+nav{
+    background-color: brown;
+    height: 50px;
+}
+
+/*---col-10 content-height start----*/
+/*.div-one{
+    height:200px;
+    width:100px;
+    background-color: brown;
+    margin-top: 70px;
+    margin-left: 50px;
+    transform: skewY(50deg);
+    float: left;
+    background: linear-gradient(to left, red, greenyellow,brown);
+}
+.div-two{
+    height: 200px;
+    width: 100px;
+    background-color: aqua;
+    margin-top: -106px;
+    margin-left: 100px;
+    transform: skewY(-65deg);
+    float: left;
+}*/
+.div-one{
+    height: 200px;
+    width: 400px;
+    background-color: red;
+    margin: 20px 0px 0px 20px;
+    animation:bitm;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+}
+@keyframes bitm {
+    0%{background-color: green;width: 400px; height: 200px;}
+    25%{background-color: rebeccapurple;width: 500px; height: 400px}
+    50%{background-color: blue;width: 600px; height: 600px}
+    75%{background-color: orange;width: 700px; height: 400px}
+    100%  {background-color: red;width: 400px; height: 200px}
 }
